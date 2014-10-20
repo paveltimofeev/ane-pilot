@@ -1,0 +1,27 @@
+<NotepadPlus>
+    <Project name="ane-pilot">
+        <Folder name="app\js">
+            <File name="app\js\api.js" />
+            <File name="app\js\app.js" />
+            <File name="app\js\controllers.js" />
+            <File name="app\js\directives.js" />
+            <File name="app\js\filters.js" />
+            <File name="app\js\restServices.js" />
+            <File name="app\js\services.js" />
+        </Folder>
+        <Folder name="tests\unit">
+            <File name="test\unit\controllersSpec.js" />
+            <File name="test\unit\mailboxesSpec.js" />
+            <File name="test\unit\servicesSpec.js" />
+        </Folder>
+        <Folder name="tests\e2e">
+            <File name="test\e2e\README.md" />
+            <File name="test\e2e\scenarios.js" />
+        </Folder>
+        <Folder name="install">
+            <File name="install\start karma.sh" />
+            <File name="install\start protractor.sh" />
+            <File name="install\start_server.bat" />
+        </Folder>
+    </Project>
+</NotepadPlus>

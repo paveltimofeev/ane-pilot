@@ -1,5 +1,8 @@
 'use strict';
 
+//var express = require('express');
+//var api = require('api')
+
 /* App Module */
 var dmpApp = angular.module('dmpApp', 
 								[ 'ngRoute', 
@@ -19,3 +22,6 @@ dmpApp.config(['$routeProvider',
 							redirectTo: '/notimplemented'
 					   });
 	}]);
+	
+	
+dmpApp.get('/api/mailboxes', api.mailboxes);
