@@ -8,6 +8,7 @@
             <File name="app\js\filters.js" />
             <File name="app\js\restServices.js" />
             <File name="app\js\services.js" />
+            <File name="app\js\data.js" />
         </Folder>
         <Folder name="tests\unit">
             <File name="test\unit\controllersSpec.js" />
