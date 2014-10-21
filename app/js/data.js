@@ -4,10 +4,11 @@ var util = require('util');
 
 // Elasticsearch REST API client module
 var elasticsearch = require('es');
-var config = { 
+var config = 
+			{ 
 				_index:'dmp',
 				server:{ host:'localhost', port:19821 }
-				};
+			};
 				
 var es = elasticsearch(config);
 
@@ -19,7 +20,7 @@ var es = elasticsearch(config);
 exports.testDB = function() {
 	es.indices.exists({ _index : 'dmp' }, function (err, data) {
 
-		if(err == null)
+		if(err === null)
 		{
 			console.log('Test result: ' + (data.exists ? '"dmp" index exists in db' : '"dmp" index does not exists in db'));
 			console.log('Code: ' + data.statusCode);
@@ -39,16 +40,16 @@ exports.testDB = function() {
 exports.GetMailboxes = function(sCallback) {
 	// mock
 	sCallback(data.mailboxes);
-}
+};
 
 exports.AddMailbox = function(email, departament, mailboxsize, sCallback, eCallback) {
 	data.mailboxes[data.mailboxes.length] = {"email": email,
 						"departament": departament, 
 						"mailboxsize": mailboxsize };
-}
+};
 
 exports.CreateRundomMailboxes = function(count, departamentsNamesArray, sCallback, eCallback) {
-	if(count > 0 && departamentsNamesArray != null && departamentsNamesArray.length > 0) {
+	if(count > 0 && departamentsNamesArray !== null && departamentsNamesArray.length > 0) {
 		
 		var maxDepIndex = departamentsNamesArray.length;
 		var maxMailboxSize = 1000;
@@ -59,7 +60,7 @@ exports.CreateRundomMailboxes = function(count, departamentsNamesArray, sCallbac
 				Math.floor(Math.random() * maxMailboxSize), sCallback, eCallback);
 		}
 	}
-}
+};
 
 
 function PrintError(err) {
