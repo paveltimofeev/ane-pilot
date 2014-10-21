@@ -3473,3 +3473,56 @@ java.io.StreamCorruptedException: invalid internal transport message format
 [2014-10-21 15:48:21,109][INFO ][node                     ] [Will o' the Wisp] stopped
 [2014-10-21 15:48:21,109][INFO ][node                     ] [Will o' the Wisp] closing ...
 [2014-10-21 15:48:21,109][INFO ][node                     ] [Will o' the Wisp] closed
+[2014-10-21 15:59:37,055][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2014-10-21 15:59:37,211][INFO ][node                     ] [Mauler] version[1.3.4], pid[1276], build[a70f3cc/2014-09-30T09:07:17Z]
+[2014-10-21 15:59:37,211][INFO ][node                     ] [Mauler] initializing ...
+[2014-10-21 15:59:37,226][INFO ][plugins                  ] [Mauler] loaded [], sites []
+[2014-10-21 15:59:42,182][INFO ][node                     ] [Mauler] initialized
+[2014-10-21 15:59:42,182][INFO ][node                     ] [Mauler] starting ...
+[2014-10-21 15:59:42,525][INFO ][transport                ] [Mauler] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.28.38.201:9300]}
+[2014-10-21 15:59:42,650][INFO ][discovery.zen.ping.multicast] [Mauler] multicast failed to start [SocketException[Unrecognized Windows Sockets error: 0: Cannot bind]], disabling
+[2014-10-21 15:59:42,650][INFO ][discovery                ] [Mauler] elasticsearch/r9mSFwxWSR2-VHUvTlG8gQ
+[2014-10-21 15:59:42,712][WARN ][discovery.zen.ping.multicast] [Mauler] failed to send multicast ping request: NullPointerException[null]
+[2014-10-21 15:59:44,241][WARN ][discovery.zen.ping.multicast] [Mauler] failed to send multicast ping request: NullPointerException[null]
+[2014-10-21 15:59:45,751][INFO ][cluster.service          ] [Mauler] new_master [Mauler][r9mSFwxWSR2-VHUvTlG8gQ][velaskec-dc][inet[/10.28.38.201:9300]], reason: zen-disco-join (elected_as_master)
+[2014-10-21 15:59:45,813][INFO ][gateway                  ] [Mauler] recovered [0] indices into cluster_state
+[2014-10-21 15:59:45,860][INFO ][http                     ] [Mauler] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.28.38.201:9200]}
+[2014-10-21 15:59:45,860][INFO ][node                     ] [Mauler] started
+[2014-10-21 16:05:50,897][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2014-10-21 16:05:51,037][INFO ][node                     ] [Super Sabre] version[1.3.4], pid[5728], build[a70f3cc/2014-09-30T09:07:17Z]
+[2014-10-21 16:05:51,037][INFO ][node                     ] [Super Sabre] initializing ...
+[2014-10-21 16:05:51,053][INFO ][plugins                  ] [Super Sabre] loaded [], sites []
+[2014-10-21 16:05:56,054][INFO ][node                     ] [Super Sabre] initialized
+[2014-10-21 16:05:56,054][INFO ][node                     ] [Super Sabre] starting ...
+[2014-10-21 16:05:56,334][INFO ][transport                ] [Super Sabre] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/10.28.38.201:9301]}
+[2014-10-21 16:05:56,475][INFO ][discovery.zen.ping.multicast] [Super Sabre] multicast failed to start [SocketException[Unrecognized Windows Sockets error: 0: Cannot bind]], disabling
+[2014-10-21 16:05:56,475][INFO ][discovery                ] [Super Sabre] elasticsearch/4kZodEDISi-FTUvBj5W3AA
+[2014-10-21 16:05:56,506][WARN ][discovery.zen.ping.multicast] [Super Sabre] failed to send multicast ping request: NullPointerException[null]
+[2014-10-21 16:05:58,040][WARN ][discovery.zen.ping.multicast] [Super Sabre] failed to send multicast ping request: NullPointerException[null]
+[2014-10-21 16:05:59,569][INFO ][cluster.service          ] [Super Sabre] new_master [Super Sabre][4kZodEDISi-FTUvBj5W3AA][velaskec-dc][inet[/10.28.38.201:9301]], reason: zen-disco-join (elected_as_master)
+[2014-10-21 16:05:59,631][INFO ][gateway                  ] [Super Sabre] recovered [0] indices into cluster_state
+[2014-10-21 16:05:59,663][INFO ][http                     ] [Super Sabre] bound_address {inet[/0:0:0:0:0:0:0:0:19821]}, publish_address {inet[/10.28.38.201:19821]}
+[2014-10-21 16:05:59,663][INFO ][node                     ] [Super Sabre] started
+[2014-10-21 16:06:07,993][INFO ][node                     ] [Super Sabre] stopping ...
+[2014-10-21 16:06:08,025][INFO ][node                     ] [Super Sabre] stopped
+[2014-10-21 16:06:08,025][INFO ][node                     ] [Super Sabre] closing ...
+[2014-10-21 16:06:08,040][INFO ][node                     ] [Super Sabre] closed
+[2014-10-21 16:06:18,253][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2014-10-21 16:06:18,409][INFO ][node                     ] [Captain Marvel] version[1.3.4], pid[3252], build[a70f3cc/2014-09-30T09:07:17Z]
+[2014-10-21 16:06:18,409][INFO ][node                     ] [Captain Marvel] initializing ...
+[2014-10-21 16:06:18,409][INFO ][plugins                  ] [Captain Marvel] loaded [], sites []
+[2014-10-21 16:06:23,230][INFO ][node                     ] [Captain Marvel] initialized
+[2014-10-21 16:06:23,230][INFO ][node                     ] [Captain Marvel] starting ...
+[2014-10-21 16:06:23,604][INFO ][transport                ] [Captain Marvel] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.28.38.201:9300]}
+[2014-10-21 16:06:23,745][INFO ][discovery.zen.ping.multicast] [Captain Marvel] multicast failed to start [SocketException[Unrecognized Windows Sockets error: 0: Cannot bind]], disabling
+[2014-10-21 16:06:23,745][INFO ][discovery                ] [Captain Marvel] elasticsearch/yeO_8WCOQL6WwMM9qIi_Xg
+[2014-10-21 16:06:23,745][WARN ][discovery.zen.ping.multicast] [Captain Marvel] failed to send multicast ping request: NullPointerException[null]
+[2014-10-21 16:06:25,270][WARN ][discovery.zen.ping.multicast] [Captain Marvel] failed to send multicast ping request: NullPointerException[null]
+[2014-10-21 16:06:26,785][INFO ][cluster.service          ] [Captain Marvel] new_master [Captain Marvel][yeO_8WCOQL6WwMM9qIi_Xg][velaskec-dc][inet[/10.28.38.201:9300]], reason: zen-disco-join (elected_as_master)
+[2014-10-21 16:06:26,832][INFO ][gateway                  ] [Captain Marvel] recovered [0] indices into cluster_state
+[2014-10-21 16:06:26,879][INFO ][http                     ] [Captain Marvel] bound_address {inet[/0:0:0:0:0:0:0:0:19821]}, publish_address {inet[/10.28.38.201:19821]}
+[2014-10-21 16:06:26,879][INFO ][node                     ] [Captain Marvel] started
+[2014-10-21 16:07:31,521][INFO ][node                     ] [Captain Marvel] stopping ...
+[2014-10-21 16:07:31,553][INFO ][node                     ] [Captain Marvel] stopped
+[2014-10-21 16:07:31,553][INFO ][node                     ] [Captain Marvel] closing ...
+[2014-10-21 16:07:31,553][INFO ][node                     ] [Captain Marvel] closed

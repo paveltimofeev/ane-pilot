@@ -6,7 +6,7 @@ var util = require('util');
 var elasticsearch = require('es');
 var config = { 
 				_index:'dmp',
-				server:{ host:'localhost', port:9200 }
+				server:{ host:'localhost', port:19821 }
 				};
 				
 var es = elasticsearch(config);

@@ -222,6 +222,7 @@
 # Set a custom port to listen for HTTP traffic:
 #
 #http.port: 9200
+http.port: 19821
 
 # Set a custom allowed content length:
 #
