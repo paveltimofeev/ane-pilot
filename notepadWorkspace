@@ -19,9 +19,11 @@
             <File name="test\e2e\scenarios.js" />
         </Folder>
         <Folder name="install">
-            <File name="install\start karma.sh" />
-            <File name="install\start protractor.sh" />
+            <File name="install\Start_all.ps1" />
             <File name="install\start_server.bat" />
+            <File name="install\start_database.bat" />
+            <File name="install\run protractor.sh" />
+            <File name="install\run karma.sh" />
         </Folder>
     </Project>
 </NotepadPlus>
