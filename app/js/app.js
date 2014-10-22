@@ -24,4 +24,4 @@ dmpApp.config(['$routeProvider',
 	}]);
 	
 	
-dmpApp.get('/api/mailboxes', api.mailboxes);
+//dmpApp.get('/api/mailboxes', api.mailboxes);

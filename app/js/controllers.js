@@ -7,11 +7,13 @@ var dmpControllers = angular.module('dmpControllers', []);
 
 function mailboxesController($scope, $http, mailboxesREST)
 {
+    
 	$scope.refresh = function() 
 	{
 		$scope.departaments = mailboxesREST.query();
 	};
 	
+    
 	
 	$scope.resetDatabase = function() 
 	{
@@ -35,6 +37,13 @@ function notimplementedController($scope)
 	$scope.count = 0;
 }
 
+function littleTestCtrl($scope){ 
+    $scope.text = "foo"; 
+}
+
+
 
 dmpControllers.controller('mailboxesController', ['$scope', '$http', 'mailboxesREST', mailboxesController]);
 dmpControllers.controller('notimplementedController', ['$scope', notimplementedController]);
+
+dmpControllers.controller('littleTestCtrl', ['$scope', littleTestCtrl]);
