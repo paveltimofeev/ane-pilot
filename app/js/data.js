@@ -12,6 +12,7 @@ var config =
 				
 var es = elasticsearch(config);
 
+
 // --------------------------------------------------------------------------------
 // DATABASE ACCESS LAYER
 // (should be moved to separate module)
