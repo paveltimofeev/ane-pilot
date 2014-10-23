@@ -1,10 +1,9 @@
 'use strict';
 
-///
-/// Not implemented view controller
-///
-angular.module('dmpApp', [])
-       .controller('notimplementedController', 
+//
+// Not implemented view controller
+//
+angular.module('dmpAppControllersModule', []).controller('notimplementedController', 
                     ['$scope', 
                     function notimplementedController($scope)
                     {

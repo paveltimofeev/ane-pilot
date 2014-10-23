@@ -1,15 +1,5 @@
 <NotepadPlus>
     <Project name="ane-pilot">
-        <Folder name="app\js">
-            <File name="app\js\api.js" />
-            <File name="app\js\app.js" />
-            <File name="app\js\controllers.js" />
-            <File name="app\js\directives.js" />
-            <File name="app\js\filters.js" />
-            <File name="app\js\restServices.js" />
-            <File name="app\js\services.js" />
-            <File name="app\js\data.js" />
-        </Folder>
         <Folder name="tests\unit">
             <File name="test\unit\controllersSpec.js" />
             <File name="test\unit\mailboxesSpec.js" />
@@ -25,6 +15,497 @@
             <File name="install\start_database.bat" />
             <File name="install\run protractor.sh" />
             <File name="install\run karma.sh" />
+        </Folder>
+        <Folder name="angular">
+            <Folder name="bower_components">
+                <Folder name="angular">
+                    <File name="app\bower_components\angular\.bower.json" />
+                    <File name="app\bower_components\angular\angular-csp.css" />
+                    <File name="app\bower_components\angular\angular.js" />
+                    <File name="app\bower_components\angular\angular.min.js" />
+                    <File name="app\bower_components\angular\angular.min.js.gzip" />
+                    <File name="app\bower_components\angular\angular.min.js.map" />
+                    <File name="app\bower_components\angular\bower.json" />
+                    <File name="app\bower_components\angular\package.json" />
+                    <File name="app\bower_components\angular\README.md" />
+                </Folder>
+                <Folder name="angular-animate">
+                    <File name="app\bower_components\angular-animate\.bower.json" />
+                    <File name="app\bower_components\angular-animate\angular-animate.js" />
+                    <File name="app\bower_components\angular-animate\angular-animate.min.js" />
+                    <File name="app\bower_components\angular-animate\angular-animate.min.js.map" />
+                    <File name="app\bower_components\angular-animate\bower.json" />
+                    <File name="app\bower_components\angular-animate\package.json" />
+                    <File name="app\bower_components\angular-animate\README.md" />
+                </Folder>
+                <Folder name="angular-mocks">
+                    <File name="app\bower_components\angular-mocks\.bower.json" />
+                    <File name="app\bower_components\angular-mocks\angular-mocks.js" />
+                    <File name="app\bower_components\angular-mocks\bower.json" />
+                    <File name="app\bower_components\angular-mocks\package.json" />
+                    <File name="app\bower_components\angular-mocks\README.md" />
+                </Folder>
+                <Folder name="angular-resource">
+                    <File name="app\bower_components\angular-resource\.bower.json" />
+                    <File name="app\bower_components\angular-resource\angular-resource.js" />
+                    <File name="app\bower_components\angular-resource\angular-resource.min.js" />
+                    <File name="app\bower_components\angular-resource\angular-resource.min.js.map" />
+                    <File name="app\bower_components\angular-resource\bower.json" />
+                    <File name="app\bower_components\angular-resource\README.md" />
+                </Folder>
+                <Folder name="angular-route">
+                    <File name="app\bower_components\angular-route\.bower.json" />
+                    <File name="app\bower_components\angular-route\angular-route.js" />
+                    <File name="app\bower_components\angular-route\angular-route.min.js" />
+                    <File name="app\bower_components\angular-route\angular-route.min.js.map" />
+                    <File name="app\bower_components\angular-route\bower.json" />
+                    <File name="app\bower_components\angular-route\README.md" />
+                </Folder>
+                <Folder name="bootstrap">
+                    <Folder name="dist">
+                        <Folder name="css">
+                            <File name="app\bower_components\bootstrap\dist\css\bootstrap-theme.css" />
+                            <File name="app\bower_components\bootstrap\dist\css\bootstrap-theme.css.map" />
+                            <File name="app\bower_components\bootstrap\dist\css\bootstrap-theme.min.css" />
+                            <File name="app\bower_components\bootstrap\dist\css\bootstrap.css" />
+                            <File name="app\bower_components\bootstrap\dist\css\bootstrap.css.map" />
+                            <File name="app\bower_components\bootstrap\dist\css\bootstrap.min.css" />
+                        </Folder>
+                        <Folder name="fonts">
+                            <File name="app\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+                            <File name="app\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+                            <File name="app\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+                            <File name="app\bower_components\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+                        </Folder>
+                        <Folder name="js">
+                            <File name="app\bower_components\bootstrap\dist\js\bootstrap.js" />
+                            <File name="app\bower_components\bootstrap\dist\js\bootstrap.min.js" />
+                        </Folder>
+                    </Folder>
+                    <Folder name="fonts">
+                        <File name="app\bower_components\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+                        <File name="app\bower_components\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+                        <File name="app\bower_components\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+                        <File name="app\bower_components\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+                    </Folder>
+                    <Folder name="grunt">
+                        <File name="app\bower_components\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+                        <File name="app\bower_components\bootstrap\grunt\bs-lessdoc-parser.js" />
+                        <File name="app\bower_components\bootstrap\grunt\bs-raw-files-generator.js" />
+                        <File name="app\bower_components\bootstrap\grunt\shrinkwrap.js" />
+                    </Folder>
+                    <Folder name="js">
+                        <File name="app\bower_components\bootstrap\js\affix.js" />
+                        <File name="app\bower_components\bootstrap\js\alert.js" />
+                        <File name="app\bower_components\bootstrap\js\button.js" />
+                        <File name="app\bower_components\bootstrap\js\carousel.js" />
+                        <File name="app\bower_components\bootstrap\js\collapse.js" />
+                        <File name="app\bower_components\bootstrap\js\dropdown.js" />
+                        <File name="app\bower_components\bootstrap\js\modal.js" />
+                        <File name="app\bower_components\bootstrap\js\popover.js" />
+                        <File name="app\bower_components\bootstrap\js\scrollspy.js" />
+                        <File name="app\bower_components\bootstrap\js\tab.js" />
+                        <File name="app\bower_components\bootstrap\js\tooltip.js" />
+                        <File name="app\bower_components\bootstrap\js\transition.js" />
+                    </Folder>
+                    <Folder name="less">
+                        <File name="app\bower_components\bootstrap\less\alerts.less" />
+                        <File name="app\bower_components\bootstrap\less\badges.less" />
+                        <File name="app\bower_components\bootstrap\less\bootstrap.less" />
+                        <File name="app\bower_components\bootstrap\less\breadcrumbs.less" />
+                        <File name="app\bower_components\bootstrap\less\button-groups.less" />
+                        <File name="app\bower_components\bootstrap\less\buttons.less" />
+                        <File name="app\bower_components\bootstrap\less\carousel.less" />
+                        <File name="app\bower_components\bootstrap\less\close.less" />
+                        <File name="app\bower_components\bootstrap\less\code.less" />
+                        <File name="app\bower_components\bootstrap\less\component-animations.less" />
+                        <File name="app\bower_components\bootstrap\less\dropdowns.less" />
+                        <File name="app\bower_components\bootstrap\less\forms.less" />
+                        <File name="app\bower_components\bootstrap\less\glyphicons.less" />
+                        <File name="app\bower_components\bootstrap\less\grid.less" />
+                        <File name="app\bower_components\bootstrap\less\input-groups.less" />
+                        <File name="app\bower_components\bootstrap\less\jumbotron.less" />
+                        <File name="app\bower_components\bootstrap\less\labels.less" />
+                        <File name="app\bower_components\bootstrap\less\list-group.less" />
+                        <File name="app\bower_components\bootstrap\less\media.less" />
+                        <File name="app\bower_components\bootstrap\less\mixins.less" />
+                        <File name="app\bower_components\bootstrap\less\modals.less" />
+                        <File name="app\bower_components\bootstrap\less\navbar.less" />
+                        <File name="app\bower_components\bootstrap\less\navs.less" />
+                        <File name="app\bower_components\bootstrap\less\normalize.less" />
+                        <File name="app\bower_components\bootstrap\less\pager.less" />
+                        <File name="app\bower_components\bootstrap\less\pagination.less" />
+                        <File name="app\bower_components\bootstrap\less\panels.less" />
+                        <File name="app\bower_components\bootstrap\less\popovers.less" />
+                        <File name="app\bower_components\bootstrap\less\print.less" />
+                        <File name="app\bower_components\bootstrap\less\progress-bars.less" />
+                        <File name="app\bower_components\bootstrap\less\responsive-utilities.less" />
+                        <File name="app\bower_components\bootstrap\less\scaffolding.less" />
+                        <File name="app\bower_components\bootstrap\less\tables.less" />
+                        <File name="app\bower_components\bootstrap\less\theme.less" />
+                        <File name="app\bower_components\bootstrap\less\thumbnails.less" />
+                        <File name="app\bower_components\bootstrap\less\tooltip.less" />
+                        <File name="app\bower_components\bootstrap\less\type.less" />
+                        <File name="app\bower_components\bootstrap\less\utilities.less" />
+                        <File name="app\bower_components\bootstrap\less\variables.less" />
+                        <File name="app\bower_components\bootstrap\less\wells.less" />
+                    </Folder>
+                    <Folder name="test-infra">
+                        <File name="app\bower_components\bootstrap\test-infra\npm-shrinkwrap.canonical.json" />
+                        <File name="app\bower_components\bootstrap\test-infra\README.md" />
+                        <File name="app\bower_components\bootstrap\test-infra\requirements.txt" />
+                        <File name="app\bower_components\bootstrap\test-infra\s3_cache.py" />
+                        <File name="app\bower_components\bootstrap\test-infra\sauce_browsers.yml" />
+                        <File name="app\bower_components\bootstrap\test-infra\uncached-npm-install.sh" />
+                    </Folder>
+                    <File name="app\bower_components\bootstrap\.bower.json" />
+                    <File name="app\bower_components\bootstrap\bower.json" />
+                    <File name="app\bower_components\bootstrap\Gruntfile.js" />
+                    <File name="app\bower_components\bootstrap\LICENSE" />
+                    <File name="app\bower_components\bootstrap\package.json" />
+                    <File name="app\bower_components\bootstrap\README.md" />
+                </Folder>
+                <Folder name="jquery">
+                    <Folder name="build">
+                        <File name="app\bower_components\jquery\build\release-notes.js" />
+                        <File name="app\bower_components\jquery\build\release.js" />
+                    </Folder>
+                    <Folder name="speed">
+                        <File name="app\bower_components\jquery\speed\benchmark.js" />
+                        <File name="app\bower_components\jquery\speed\benchmarker.css" />
+                        <File name="app\bower_components\jquery\speed\benchmarker.js" />
+                        <File name="app\bower_components\jquery\speed\closest.html" />
+                        <File name="app\bower_components\jquery\speed\css.html" />
+                        <File name="app\bower_components\jquery\speed\event.html" />
+                        <File name="app\bower_components\jquery\speed\filter.html" />
+                        <File name="app\bower_components\jquery\speed\find.html" />
+                        <File name="app\bower_components\jquery\speed\index.html" />
+                        <File name="app\bower_components\jquery\speed\jquery-basis.js" />
+                        <File name="app\bower_components\jquery\speed\slice.vs.concat.html" />
+                    </Folder>
+                    <Folder name="src">
+                        <Folder name="ajax">
+                            <File name="app\bower_components\jquery\src\ajax\jsonp.js" />
+                            <File name="app\bower_components\jquery\src\ajax\script.js" />
+                            <File name="app\bower_components\jquery\src\ajax\xhr.js" />
+                        </Folder>
+                        <Folder name="sizzle" />
+                        <File name="app\bower_components\jquery\src\.jshintrc" />
+                        <File name="app\bower_components\jquery\src\ajax.js" />
+                        <File name="app\bower_components\jquery\src\attributes.js" />
+                        <File name="app\bower_components\jquery\src\callbacks.js" />
+                        <File name="app\bower_components\jquery\src\core.js" />
+                        <File name="app\bower_components\jquery\src\css.js" />
+                        <File name="app\bower_components\jquery\src\data.js" />
+                        <File name="app\bower_components\jquery\src\deferred.js" />
+                        <File name="app\bower_components\jquery\src\deprecated.js" />
+                        <File name="app\bower_components\jquery\src\dimensions.js" />
+                        <File name="app\bower_components\jquery\src\effects.js" />
+                        <File name="app\bower_components\jquery\src\event-alias.js" />
+                        <File name="app\bower_components\jquery\src\event.js" />
+                        <File name="app\bower_components\jquery\src\exports.js" />
+                        <File name="app\bower_components\jquery\src\intro.js" />
+                        <File name="app\bower_components\jquery\src\manipulation.js" />
+                        <File name="app\bower_components\jquery\src\offset.js" />
+                        <File name="app\bower_components\jquery\src\outro.js" />
+                        <File name="app\bower_components\jquery\src\queue.js" />
+                        <File name="app\bower_components\jquery\src\serialize.js" />
+                        <File name="app\bower_components\jquery\src\sizzle-jquery.js" />
+                        <File name="app\bower_components\jquery\src\support.js" />
+                        <File name="app\bower_components\jquery\src\traversing.js" />
+                        <File name="app\bower_components\jquery\src\wrap.js" />
+                    </Folder>
+                    <Folder name="test">
+                        <Folder name="data">
+                            <Folder name="ajax">
+                                <File name="app\bower_components\jquery\test\data\ajax\unreleasedXHR.html" />
+                            </Folder>
+                            <Folder name="core">
+                                <File name="app\bower_components\jquery\test\data\core\cc_on.html" />
+                            </Folder>
+                            <Folder name="dimensions">
+                                <File name="app\bower_components\jquery\test\data\dimensions\documentLarge.html" />
+                                <File name="app\bower_components\jquery\test\data\dimensions\documentSmall.html" />
+                            </Folder>
+                            <Folder name="event">
+                                <File name="app\bower_components\jquery\test\data\event\focusElem.html" />
+                                <File name="app\bower_components\jquery\test\data\event\longLoadScript.php" />
+                                <File name="app\bower_components\jquery\test\data\event\promiseReady.html" />
+                                <File name="app\bower_components\jquery\test\data\event\syncReady.html" />
+                            </Folder>
+                            <Folder name="manipulation">
+                                <File name="app\bower_components\jquery\test\data\manipulation\iframe-denied.html" />
+                            </Folder>
+                            <Folder name="offset">
+                                <File name="app\bower_components\jquery\test\data\offset\absolute.html" />
+                                <File name="app\bower_components\jquery\test\data\offset\body.html" />
+                                <File name="app\bower_components\jquery\test\data\offset\fixed.html" />
+                                <File name="app\bower_components\jquery\test\data\offset\relative.html" />
+                                <File name="app\bower_components\jquery\test\data\offset\scroll.html" />
+                                <File name="app\bower_components\jquery\test\data\offset\static.html" />
+                                <File name="app\bower_components\jquery\test\data\offset\table.html" />
+                            </Folder>
+                            <Folder name="selector">
+                                <File name="app\bower_components\jquery\test\data\selector\html5_selector.html" />
+                                <File name="app\bower_components\jquery\test\data\selector\sizzle_cache.html" />
+                            </Folder>
+                            <Folder name="support">
+                                <File name="app\bower_components\jquery\test\data\support\bodyBackground.html" />
+                                <File name="app\bower_components\jquery\test\data\support\boxSizing.html" />
+                                <File name="app\bower_components\jquery\test\data\support\csp.js" />
+                                <File name="app\bower_components\jquery\test\data\support\csp.php" />
+                                <File name="app\bower_components\jquery\test\data\support\shrinkWrapBlocks.html" />
+                                <File name="app\bower_components\jquery\test\data\support\testElementCrash.html" />
+                            </Folder>
+                            <File name="app\bower_components\jquery\test\data\1x1.jpg" />
+                            <File name="app\bower_components\jquery\test\data\atom+xml.php" />
+                            <File name="app\bower_components\jquery\test\data\badcall.js" />
+                            <File name="app\bower_components\jquery\test\data\badjson.js" />
+                            <File name="app\bower_components\jquery\test\data\cleanScript.html" />
+                            <File name="app\bower_components\jquery\test\data\dashboard.xml" />
+                            <File name="app\bower_components\jquery\test\data\echoData.php" />
+                            <File name="app\bower_components\jquery\test\data\echoQuery.php" />
+                            <File name="app\bower_components\jquery\test\data\errorWithJSON.php" />
+                            <File name="app\bower_components\jquery\test\data\errorWithText.php" />
+                            <File name="app\bower_components\jquery\test\data\etag.php" />
+                            <File name="app\bower_components\jquery\test\data\evalScript.php" />
+                            <File name="app\bower_components\jquery\test\data\headers.php" />
+                            <File name="app\bower_components\jquery\test\data\iframe.html" />
+                            <File name="app\bower_components\jquery\test\data\if_modified_since.php" />
+                            <File name="app\bower_components\jquery\test\data\jquery-1.9.1.ajax_xhr.min.js" />
+                            <File name="app\bower_components\jquery\test\data\json.php" />
+                            <File name="app\bower_components\jquery\test\data\jsonp.php" />
+                            <File name="app\bower_components\jquery\test\data\json_obj.js" />
+                            <File name="app\bower_components\jquery\test\data\name.html" />
+                            <File name="app\bower_components\jquery\test\data\name.php" />
+                            <File name="app\bower_components\jquery\test\data\nocontent.php" />
+                            <File name="app\bower_components\jquery\test\data\params_html.php" />
+                            <File name="app\bower_components\jquery\test\data\readywaitasset.js" />
+                            <File name="app\bower_components\jquery\test\data\readywaitloader.js" />
+                            <File name="app\bower_components\jquery\test\data\script.php" />
+                            <File name="app\bower_components\jquery\test\data\statusText.php" />
+                            <File name="app\bower_components\jquery\test\data\test.html" />
+                            <File name="app\bower_components\jquery\test\data\test.js" />
+                            <File name="app\bower_components\jquery\test\data\test.php" />
+                            <File name="app\bower_components\jquery\test\data\test2.html" />
+                            <File name="app\bower_components\jquery\test\data\test3.html" />
+                            <File name="app\bower_components\jquery\test\data\testinit.js" />
+                            <File name="app\bower_components\jquery\test\data\testrunner.js" />
+                            <File name="app\bower_components\jquery\test\data\testsuite.css" />
+                            <File name="app\bower_components\jquery\test\data\text.php" />
+                            <File name="app\bower_components\jquery\test\data\ua.txt" />
+                            <File name="app\bower_components\jquery\test\data\with_fries.xml" />
+                            <File name="app\bower_components\jquery\test\data\with_fries_over_jsonp.php" />
+                        </Folder>
+                        <Folder name="qunit" />
+                        <Folder name="unit">
+                            <File name="app\bower_components\jquery\test\unit\ajax.js" />
+                            <File name="app\bower_components\jquery\test\unit\attributes.js" />
+                            <File name="app\bower_components\jquery\test\unit\callbacks.js" />
+                            <File name="app\bower_components\jquery\test\unit\core.js" />
+                            <File name="app\bower_components\jquery\test\unit\css.js" />
+                            <File name="app\bower_components\jquery\test\unit\data.js" />
+                            <File name="app\bower_components\jquery\test\unit\deferred.js" />
+                            <File name="app\bower_components\jquery\test\unit\deprecated.js" />
+                            <File name="app\bower_components\jquery\test\unit\dimensions.js" />
+                            <File name="app\bower_components\jquery\test\unit\effects.js" />
+                            <File name="app\bower_components\jquery\test\unit\event.js" />
+                            <File name="app\bower_components\jquery\test\unit\exports.js" />
+                            <File name="app\bower_components\jquery\test\unit\manipulation.js" />
+                            <File name="app\bower_components\jquery\test\unit\offset.js" />
+                            <File name="app\bower_components\jquery\test\unit\queue.js" />
+                            <File name="app\bower_components\jquery\test\unit\selector.js" />
+                            <File name="app\bower_components\jquery\test\unit\serialize.js" />
+                            <File name="app\bower_components\jquery\test\unit\support.js" />
+                            <File name="app\bower_components\jquery\test\unit\traversing.js" />
+                            <File name="app\bower_components\jquery\test\unit\wrap.js" />
+                        </Folder>
+                        <File name="app\bower_components\jquery\test\.jshintignore" />
+                        <File name="app\bower_components\jquery\test\.jshintrc" />
+                        <File name="app\bower_components\jquery\test\delegatetest.html" />
+                        <File name="app\bower_components\jquery\test\hovertest.html" />
+                        <File name="app\bower_components\jquery\test\index.html" />
+                        <File name="app\bower_components\jquery\test\jquery.js" />
+                        <File name="app\bower_components\jquery\test\localfile.html" />
+                        <File name="app\bower_components\jquery\test\networkerror.html" />
+                        <File name="app\bower_components\jquery\test\readywait.html" />
+                        <File name="app\bower_components\jquery\test\xhtml.php" />
+                    </Folder>
+                    <File name="app\bower_components\jquery\.bower.json" />
+                    <File name="app\bower_components\jquery\.editorconfig" />
+                    <File name="app\bower_components\jquery\.gitattributes" />
+                    <File name="app\bower_components\jquery\.gitignore" />
+                    <File name="app\bower_components\jquery\.gitmodules" />
+                    <File name="app\bower_components\jquery\.jshintrc" />
+                    <File name="app\bower_components\jquery\.mailmap" />
+                    <File name="app\bower_components\jquery\AUTHORS.txt" />
+                    <File name="app\bower_components\jquery\bower.json" />
+                    <File name="app\bower_components\jquery\component.json" />
+                    <File name="app\bower_components\jquery\composer.json" />
+                    <File name="app\bower_components\jquery\CONTRIBUTING.md" />
+                    <File name="app\bower_components\jquery\Gruntfile.js" />
+                    <File name="app\bower_components\jquery\jquery-migrate.js" />
+                    <File name="app\bower_components\jquery\jquery-migrate.min.js" />
+                    <File name="app\bower_components\jquery\jquery.js" />
+                    <File name="app\bower_components\jquery\jquery.min.js" />
+                    <File name="app\bower_components\jquery\jquery.min.map" />
+                    <File name="app\bower_components\jquery\MIT-LICENSE.txt" />
+                    <File name="app\bower_components\jquery\package.json" />
+                    <File name="app\bower_components\jquery\README.md" />
+                </Folder>
+            </Folder>
+            <Folder name="Jasmine">
+                <Folder name="lib">
+                    <Folder name="jasmine-2.0.3">
+                        <File name="app\Jasmine\lib\jasmine-2.0.3\boot.js" />
+                        <File name="app\Jasmine\lib\jasmine-2.0.3\console.js" />
+                        <File name="app\Jasmine\lib\jasmine-2.0.3\jasmine-html.js" />
+                        <File name="app\Jasmine\lib\jasmine-2.0.3\jasmine.css" />
+                        <File name="app\Jasmine\lib\jasmine-2.0.3\jasmine.js" />
+                        <File name="app\Jasmine\lib\jasmine-2.0.3\jasmine_favicon.png" />
+                    </Folder>
+                </Folder>
+                <Folder name="spec">
+                    <File name="app\Jasmine\spec\PlayerSpec.js" />
+                    <File name="app\Jasmine\spec\SpecHelper.js" />
+                    <File name="app\Jasmine\spec\test.js" />
+                </Folder>
+                <Folder name="src">
+                    <File name="app\Jasmine\src\Player.js" />
+                    <File name="app\Jasmine\src\Song.js" />
+                </Folder>
+                <File name="app\Jasmine\index.html" />
+                <File name="app\Jasmine\MIT.LICENSE" />
+                <File name="app\Jasmine\SpecRunner.html" />
+            </Folder>
+            <Folder name="js">
+                <File name="app\js\controllers.js" />
+                <File name="app\js\dmpApp.js" />
+                <File name="app\js\maiboxDatabaseService.js" />
+                <File name="app\js\mailboxesController.js" />
+                <File name="app\js\notimplementedController.js" />
+            </Folder>
+            <Folder name="partials">
+                <File name="app\partials\.gitkeep" />
+                <File name="app\partials\mailbox-sizes-by-deps.html" />
+                <File name="app\partials\notimplemented.html" />
+            </Folder>
+            <Folder name="styles">
+                <Folder name="css">
+                    <File name="app\styles\css\.gitkeep" />
+                    <File name="app\styles\css\app.css" />
+                    <File name="app\styles\css\bootstrap-theme.css" />
+                    <File name="app\styles\css\bootstrap-theme.css.map" />
+                    <File name="app\styles\css\bootstrap-theme.min.css" />
+                    <File name="app\styles\css\bootstrap.css" />
+                    <File name="app\styles\css\bootstrap.css.map" />
+                    <File name="app\styles\css\bootstrap.min.css" />
+                    <File name="app\styles\css\dashboard.css" />
+                </Folder>
+                <Folder name="fonts">
+                    <File name="app\styles\fonts\glyphicons-halflings-regular.eot" />
+                    <File name="app\styles\fonts\glyphicons-halflings-regular.svg" />
+                    <File name="app\styles\fonts\glyphicons-halflings-regular.ttf" />
+                    <File name="app\styles\fonts\glyphicons-halflings-regular.woff" />
+                </Folder>
+                <Folder name="img">
+                    <Folder name="phones">
+                        <File name="app\styles\img\phones\dell-streak-7.0.jpg" />
+                        <File name="app\styles\img\phones\dell-streak-7.1.jpg" />
+                        <File name="app\styles\img\phones\dell-streak-7.2.jpg" />
+                        <File name="app\styles\img\phones\dell-streak-7.3.jpg" />
+                        <File name="app\styles\img\phones\dell-streak-7.4.jpg" />
+                        <File name="app\styles\img\phones\dell-venue.0.jpg" />
+                        <File name="app\styles\img\phones\dell-venue.1.jpg" />
+                        <File name="app\styles\img\phones\dell-venue.2.jpg" />
+                        <File name="app\styles\img\phones\dell-venue.3.jpg" />
+                        <File name="app\styles\img\phones\dell-venue.4.jpg" />
+                        <File name="app\styles\img\phones\dell-venue.5.jpg" />
+                        <File name="app\styles\img\phones\droid-2-global-by-motorola.0.jpg" />
+                        <File name="app\styles\img\phones\droid-2-global-by-motorola.1.jpg" />
+                        <File name="app\styles\img\phones\droid-2-global-by-motorola.2.jpg" />
+                        <File name="app\styles\img\phones\droid-pro-by-motorola.0.jpg" />
+                        <File name="app\styles\img\phones\droid-pro-by-motorola.1.jpg" />
+                        <File name="app\styles\img\phones\lg-axis.0.jpg" />
+                        <File name="app\styles\img\phones\lg-axis.1.jpg" />
+                        <File name="app\styles\img\phones\lg-axis.2.jpg" />
+                        <File name="app\styles\img\phones\motorola-atrix-4g.0.jpg" />
+                        <File name="app\styles\img\phones\motorola-atrix-4g.1.jpg" />
+                        <File name="app\styles\img\phones\motorola-atrix-4g.2.jpg" />
+                        <File name="app\styles\img\phones\motorola-atrix-4g.3.jpg" />
+                        <File name="app\styles\img\phones\motorola-bravo-with-motoblur.0.jpg" />
+                        <File name="app\styles\img\phones\motorola-bravo-with-motoblur.1.jpg" />
+                        <File name="app\styles\img\phones\motorola-bravo-with-motoblur.2.jpg" />
+                        <File name="app\styles\img\phones\motorola-charm-with-motoblur.0.jpg" />
+                        <File name="app\styles\img\phones\motorola-charm-with-motoblur.1.jpg" />
+                        <File name="app\styles\img\phones\motorola-charm-with-motoblur.2.jpg" />
+                        <File name="app\styles\img\phones\motorola-defy-with-motoblur.0.jpg" />
+                        <File name="app\styles\img\phones\motorola-defy-with-motoblur.1.jpg" />
+                        <File name="app\styles\img\phones\motorola-defy-with-motoblur.2.jpg" />
+                        <File name="app\styles\img\phones\motorola-xoom-with-wi-fi.0.jpg" />
+                        <File name="app\styles\img\phones\motorola-xoom-with-wi-fi.1.jpg" />
+                        <File name="app\styles\img\phones\motorola-xoom-with-wi-fi.2.jpg" />
+                        <File name="app\styles\img\phones\motorola-xoom-with-wi-fi.3.jpg" />
+                        <File name="app\styles\img\phones\motorola-xoom-with-wi-fi.4.jpg" />
+                        <File name="app\styles\img\phones\motorola-xoom-with-wi-fi.5.jpg" />
+                        <File name="app\styles\img\phones\motorola-xoom.0.jpg" />
+                        <File name="app\styles\img\phones\motorola-xoom.1.jpg" />
+                        <File name="app\styles\img\phones\motorola-xoom.2.jpg" />
+                        <File name="app\styles\img\phones\nexus-s.0.jpg" />
+                        <File name="app\styles\img\phones\nexus-s.1.jpg" />
+                        <File name="app\styles\img\phones\nexus-s.2.jpg" />
+                        <File name="app\styles\img\phones\nexus-s.3.jpg" />
+                        <File name="app\styles\img\phones\samsung-galaxy-tab.0.jpg" />
+                        <File name="app\styles\img\phones\samsung-galaxy-tab.1.jpg" />
+                        <File name="app\styles\img\phones\samsung-galaxy-tab.2.jpg" />
+                        <File name="app\styles\img\phones\samsung-galaxy-tab.3.jpg" />
+                        <File name="app\styles\img\phones\samsung-galaxy-tab.4.jpg" />
+                        <File name="app\styles\img\phones\samsung-galaxy-tab.5.jpg" />
+                        <File name="app\styles\img\phones\samsung-galaxy-tab.6.jpg" />
+                        <File name="app\styles\img\phones\samsung-gem.0.jpg" />
+                        <File name="app\styles\img\phones\samsung-gem.1.jpg" />
+                        <File name="app\styles\img\phones\samsung-gem.2.jpg" />
+                        <File name="app\styles\img\phones\samsung-mesmerize-a-galaxy-s-phone.0.jpg" />
+                        <File name="app\styles\img\phones\samsung-mesmerize-a-galaxy-s-phone.1.jpg" />
+                        <File name="app\styles\img\phones\samsung-mesmerize-a-galaxy-s-phone.2.jpg" />
+                        <File name="app\styles\img\phones\samsung-mesmerize-a-galaxy-s-phone.3.jpg" />
+                        <File name="app\styles\img\phones\samsung-showcase-a-galaxy-s-phone.0.jpg" />
+                        <File name="app\styles\img\phones\samsung-showcase-a-galaxy-s-phone.1.jpg" />
+                        <File name="app\styles\img\phones\samsung-showcase-a-galaxy-s-phone.2.jpg" />
+                        <File name="app\styles\img\phones\samsung-transform.0.jpg" />
+                        <File name="app\styles\img\phones\samsung-transform.1.jpg" />
+                        <File name="app\styles\img\phones\samsung-transform.2.jpg" />
+                        <File name="app\styles\img\phones\samsung-transform.3.jpg" />
+                        <File name="app\styles\img\phones\samsung-transform.4.jpg" />
+                        <File name="app\styles\img\phones\sanyo-zio.0.jpg" />
+                        <File name="app\styles\img\phones\sanyo-zio.1.jpg" />
+                        <File name="app\styles\img\phones\sanyo-zio.2.jpg" />
+                        <File name="app\styles\img\phones\t-mobile-g2.0.jpg" />
+                        <File name="app\styles\img\phones\t-mobile-g2.1.jpg" />
+                        <File name="app\styles\img\phones\t-mobile-g2.2.jpg" />
+                        <File name="app\styles\img\phones\t-mobile-mytouch-4g.0.jpg" />
+                        <File name="app\styles\img\phones\t-mobile-mytouch-4g.1.jpg" />
+                        <File name="app\styles\img\phones\t-mobile-mytouch-4g.2.jpg" />
+                        <File name="app\styles\img\phones\t-mobile-mytouch-4g.3.jpg" />
+                        <File name="app\styles\img\phones\t-mobile-mytouch-4g.4.jpg" />
+                        <File name="app\styles\img\phones\t-mobile-mytouch-4g.5.jpg" />
+                    </Folder>
+                    <File name="app\styles\img\.gitkeep" />
+                    <File name="app\styles\img\glyphicons-halflings-white.png" />
+                    <File name="app\styles\img\glyphicons-halflings.png" />
+                </Folder>
+                <Folder name="js">
+                    <File name="app\styles\js\bootstrap.js" />
+                    <File name="app\styles\js\bootstrap.min.js" />
+                    <File name="app\styles\js\docs.js" />
+                    <File name="app\styles\js\ie-emulation-modes-warning.js" />
+                    <File name="app\styles\js\ie10-viewport-bug-workaround.js" />
+                    <File name="app\styles\js\jquery.js" />
+                </Folder>
+            </Folder>
+            <File name="app\.bowerrc" />
+            <File name="app\index.html" />
+            <File name="app\littletest.html" />
         </Folder>
     </Project>
 </NotepadPlus>

@@ -1,7 +1,7 @@
 'use strict';
 //var express = require('express');
 
-var dmpApp = angular.module('dmpApp', ['ngRoute', 'notimplementedController', 'mailboxesController'] );
+var dmpApp = angular.module('dmpApp', ['ngRoute', 'dmpAppControllersModule', 'dmpAppControllersModule2'] );
 
 ///
 /// Setting up routing
@@ -16,12 +16,12 @@ dmpApp.config(['$routeProvider', function($routeProvider)
 														templateUrl : 'partials/mailbox-sizes-by-deps.html', 
 														controller: 'mailboxesController'
 												  })
-												  .when('/unit-tests', { 
-												  		redirectTo: '/Jasmine/' 
-												  })
-												  .when('/e2e-tests', { 
-												  		redirectTo: '/notimplemented' 
-												  })
+												  //.when('/unit-tests', { 
+												  //		redirectTo: '/Jasmine/' 
+												  //})
+												  //.when('/e2e-tests', { 
+												  //		redirectTo: '/notimplemented' 
+												  //})
 												  .otherwise({ 
 														redirectTo: '/notimplemented'
 												   });
