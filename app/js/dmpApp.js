@@ -16,14 +16,8 @@ dmpApp.config(['$routeProvider', function($routeProvider)
 														templateUrl : 'partials/mailbox-sizes-by-deps.html', 
 														controller: 'mailboxesController'
 												  })
-												  //.when('/unit-tests', { 
-												  //		redirectTo: '/Jasmine/' 
-												  //})
-												  //.when('/e2e-tests', { 
-												  //		redirectTo: '/notimplemented' 
-												  //})
 												  .otherwise({ 
-														redirectTo: '/notimplemented'
+														redirectTo: '/mailbox-sizes-by-deps'
 												   });
 								}
 			]);

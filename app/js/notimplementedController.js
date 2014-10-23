@@ -7,8 +7,8 @@ angular.module('dmpAppControllersModule', []).controller('notimplementedControll
                     ['$scope', 
                     function notimplementedController($scope)
                     {
-                    	$scope.message = 'This page is not implemented yet.';
-                    	$scope.count = 0;
+						var pre = ['No, this ', 'And this ', 'Again, ', 'Sorry, ', 'So sorry, but this ', 'Oops, this '];
+                    	$scope.message = pre[Math.floor(Math.random()* pre.length)] + 'page is not implemented yet.';
                     }
                     
 ]);
