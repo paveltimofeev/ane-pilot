@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/v0.10.30/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/v0.10.30/bin/npm',
+1 verbose cli   'start' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart AngularJSNodeJSElasticsearch@0.0.1
+6 verbose unsafe-perm in lifecycle true
+7 info start AngularJSNodeJSElasticsearch@0.0.1
+8 verbose unsafe-perm in lifecycle true
+9 info AngularJSNodeJSElasticsearch@0.0.1 Failed to exec start script
+10 error AngularJSNodeJSElasticsearch@0.0.1 start: `http-server -a 127.0.0.1 -p 19828`
+10 error Exit status 126
+11 error Failed at the AngularJSNodeJSElasticsearch@0.0.1 start script.
+11 error This is most likely a problem with the AngularJSNodeJSElasticsearch package,
+11 error not with npm itself.
+11 error Tell the author that this fails on your system:
+11 error     http-server -a 127.0.0.1 -p 19828
+11 error You can get their info via:
+11 error     npm owner ls AngularJSNodeJSElasticsearch
+11 error There is likely additional logging output above.
+12 error System Linux 3.14.13-c9
+13 error command "/home/ubuntu/.nvm/v0.10.30/bin/node" "/home/ubuntu/.nvm/v0.10.30/bin/npm" "start"
+14 error cwd /home/ubuntu/workspace
+15 error node -v v0.10.30
+16 error npm -v 1.4.21
+17 error code ELIFECYCLE
+18 verbose exit [ 1, true ]
