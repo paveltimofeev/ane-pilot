@@ -4,20 +4,19 @@
 // Controller of Mailboxes view
 //
 
-angular.module('dmpAppControllersModule2', []).controller('mailboxesController', 
-                ['$scope', 
-                function mailboxesController($scope)
+angular.module('dmpApp').controller('mailboxesController', 
+                ['$scope', '$http', 'maiboxDatabaseServiceMock', 
+                function mailboxesController($scope, $http, maiboxDatabaseServiceMock)
                 {
 				
                         // Refresh mailboxes grid action
                     	$scope.refresh = function() 
                     	{
-							$scope.departaments = [{ 
-							"index": "DEPID" + Math.floor(Math.random() * 1000), 
-							"email":"aherfdg@e-mail.com",
-							"name": "Lorem Departament", 
-							"count": Math.floor(Math.random() * 100), 
-							"size": Math.floor(Math.random() * 1000) * 10 }];
+                    		maiboxDatabaseServiceMock.GetMailboxes(function(data){
+                    			
+                    			$scope.departaments = data;
+                    			
+                    		});
                     	};
                     	
                         
@@ -26,33 +25,24 @@ angular.module('dmpAppControllersModule2', []).controller('mailboxesController',
                     	$scope.resetDatabase = function() 
                     	{
                     	    $scope.departaments = [];
-							// should be something like this:
-							//maiboxDatabaseService.CreateRundomMailboxes(
-							//              	            1000000, 
-							//              	            ['Dep1', 'Dep2', 'Dep3'], 
-							//              	            function(data) { 
-							//              	                
-							//              	                // success!; 
-							//              	                
-							//              	            }, 
-							//              	            function(data) { 
-							//              	                
-							//              	                // error!; 
-							//              	                
-							//              	            });
+							
+							 // should be something like this:
+							maiboxDatabaseServiceMock.CreateRundomMailboxes( 100, maiboxDatabaseServiceMock.Departaments, 
+							              	            function(success) { 
+							              	            	$scope.refresh();
+							              	            }, 
+							              	            function(error) { 
+							              	            	
+							              	            });
                             
-                    		// var url = 'https://api.github.com/search/repositories?q=%22elasticsearch%22';
-                    		// 
-                    		// $http.get(url).success(function (data) 
-                    		// {
-                    		// 	$scope.departaments = data;
-                    		// });
+                            
+                    		 /* $http.get( 'https://api.github.com/search/repositories?q=%22elasticsearch%22').success(function (data) 
+                    		 {
+                    		 	$scope.departaments = data;
+                    		 });
+                    		 */
                     	};
 						
 						$scope.refresh();
                 }
 ]);
-
-
-
-

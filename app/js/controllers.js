@@ -6,7 +6,7 @@
 // TODO: Proof of concept, should delete later
 //
 
-var dmpControllers = angular.module('dmpAppControllersModule', []);
+var dmpControllers = angular.module('dmpApp');
 
 
 function littleTestCtrl($scope){ 

@@ -3,7 +3,7 @@
 //
 // Not implemented view controller
 //
-angular.module('dmpAppControllersModule', []).controller('notimplementedController', 
+angular.module('dmpApp').controller('notimplementedController', 
                     ['$scope', 
                     function notimplementedController($scope)
                     {

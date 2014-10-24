@@ -1,7 +1,7 @@
 'use strict';
 //var express = require('express');
 
-var dmpApp = angular.module('dmpApp', ['ngRoute', 'dmpAppControllersModule', 'dmpAppControllersModule2'] );
+var dmpApp = angular.module('dmpApp', ['ngRoute', 'dmpDB'] );
 
 ///
 /// Setting up routing
