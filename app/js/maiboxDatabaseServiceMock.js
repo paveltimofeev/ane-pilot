@@ -1,4 +1,4 @@
-angular.module('dmpDB', []).factory('maiboxDatabaseServiceMock', function() {
+angular.module('dmpDB', ['elasticsearch']).factory('maiboxDatabaseServiceMock', function() {
     
     /// Names of departanents
     var depts = 

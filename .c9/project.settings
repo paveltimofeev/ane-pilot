@@ -15,7 +15,7 @@
     "ace": {
         "@newLineMode": "unix",
         "@tabSize": "4",
-        "@useSoftTabs": "true",
+        "@useSoftTabs": true,
         "@guessTabSize": "true"
     },
     "find.nak": {

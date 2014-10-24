@@ -1,0 +1,44 @@
+<H3 class="sub-header">Actions</H3>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-info" ng-click="CheckAction()">Check controller</button>
+  <button type="button" class="btn btn-info" ng-click="GetCount()">Get Count</button>
+  <button type="button" class="btn btn-default" ng-click="CreateData()">Create</button>
+  <button type="button" class="btn btn-default" ng-click="GetData()">Get</button>
+  <button type="button" class="btn btn-default" ng-click="UpdateData()">Update</button>
+  <button type="button" class="btn btn-default" ng-click="DeleteData()">Delete</button>
+  <button type="button" class="btn btn-warning" ng-click="ContinousUpdateView()">Continously Update View</button>
+</div>
+
+
+<H3 class="sub-header">Responses</H3>
+
+<div class="alert alert-success" role="alert" ng-if="success != '' "> {{ success }} </div>
+<div class="alert alert-info" role="alert" ng-if="info != '' "> {{ info }} </div>
+<div class="alert alert-warning" role="alert" ng-if="warning != '' "> {{ warning }} </div>
+<div class="alert alert-danger" role="alert" ng-if="danger != '' "> {{ danger }} </div>
+
+
+<H3 class="sub-header">Data</H3>
+<div ng-if="data != null" class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Column 0</th>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+    	    <th>Column 4</th>
+        </tr>
+      </thead>
+      <tbody>
+    	<tr ng-repeat="row in data">
+    	    <td>{{ row.Column0 }}</td>
+          <td>{{ row.Column1 }}</td>
+          <td>{{ row.Column2 }}</td>
+          <td>{{ row.Column3 }}</td>
+          <td>{{ row.Column4 }}</td>
+    	</tr>
+      </tbody>
+    </table>
+</div>
