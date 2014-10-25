@@ -1,0 +1,27 @@
+[2014-10-24 21:58:34,147][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2014-10-24 21:58:34,240][INFO ][node                     ] [Jocasta] version[1.3.4], pid[5752], build[a70f3cc/2014-09-30T09:07:17Z]
+[2014-10-24 21:58:34,240][INFO ][node                     ] [Jocasta] initializing ...
+[2014-10-24 21:58:34,245][INFO ][plugins                  ] [Jocasta] loaded [], sites []
+[2014-10-24 21:58:36,616][INFO ][node                     ] [Jocasta] initialized
+[2014-10-24 21:58:36,616][INFO ][node                     ] [Jocasta] starting ...
+[2014-10-24 21:58:36,981][INFO ][transport                ] [Jocasta] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.0.105:9300]}
+[2014-10-24 21:58:37,679][INFO ][discovery                ] [Jocasta] elasticsearch/kxxgZ6HaS_KbkCxGuca_uA
+[2014-10-24 21:58:40,724][INFO ][cluster.service          ] [Jocasta] new_master [Jocasta][kxxgZ6HaS_KbkCxGuca_uA][DEV-NOTE][inet[/192.168.0.105:9300]], reason: zen-disco-join (elected_as_master)
+[2014-10-24 21:58:40,831][INFO ][gateway                  ] [Jocasta] recovered [0] indices into cluster_state
+[2014-10-24 21:58:40,996][INFO ][http                     ] [Jocasta] bound_address {inet[/0:0:0:0:0:0:0:0:19821]}, publish_address {inet[/192.168.0.105:19821]}
+[2014-10-24 21:58:40,996][INFO ][node                     ] [Jocasta] started
+[2014-10-24 22:43:39,142][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2014-10-24 22:43:39,241][INFO ][node                     ] [Watcher] version[1.3.4], pid[5000], build[a70f3cc/2014-09-30T09:07:17Z]
+[2014-10-24 22:43:39,241][INFO ][node                     ] [Watcher] initializing ...
+[2014-10-24 22:43:39,246][INFO ][plugins                  ] [Watcher] loaded [], sites []
+[2014-10-24 22:43:42,273][INFO ][node                     ] [Watcher] initialized
+[2014-10-24 22:43:42,273][INFO ][node                     ] [Watcher] starting ...
+[2014-10-24 22:43:42,871][INFO ][transport                ] [Watcher] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.0.105:9300]}
+[2014-10-24 22:43:44,254][INFO ][discovery                ] [Watcher] elasticsearch/bXHpqiZ3Q-G0uI20-EEHfw
+[2014-10-24 22:43:47,420][INFO ][cluster.service          ] [Watcher] new_master [Watcher][bXHpqiZ3Q-G0uI20-EEHfw][DEV-NOTE][inet[/192.168.0.105:9300]], reason: zen-disco-join (elected_as_master)
+[2014-10-24 22:43:47,531][INFO ][gateway                  ] [Watcher] recovered [0] indices into cluster_state
+[2014-10-24 22:43:47,746][INFO ][http                     ] [Watcher] bound_address {inet[/0:0:0:0:0:0:0:0:19821]}, publish_address {inet[/192.168.0.105:19821]}
+[2014-10-24 22:43:47,746][INFO ][node                     ] [Watcher] started
+[2014-10-24 22:46:20,869][INFO ][cluster.metadata         ] [Watcher] [my_dmp_index] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2014-10-24 22:46:22,822][INFO ][cluster.metadata         ] [Watcher] [my_dmp_index] update_mapping [mytype] (dynamic)
+[2014-10-24 23:19:28,936][INFO ][cluster.metadata         ] [Watcher] [my_dmp_index] update_mapping [mytype] (dynamic)

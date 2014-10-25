@@ -1,7 +1,10 @@
-# Start elasticsearch
-Start-Process -FilePath ".\start_database.bat"
+# Start database elasticsearch
+Start-Process -FilePath ".\start_database.bat" 
 
-# Start node.js
+# Start backend
+# Start-Process -FilePath ".\start_server.bat"
+
+# Start frontend
 Start-Process -FilePath ".\start_server.bat"
 
 

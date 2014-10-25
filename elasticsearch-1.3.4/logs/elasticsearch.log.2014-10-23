@@ -1,0 +1,24 @@
+[2014-10-23 22:48:06,801][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2014-10-23 22:48:07,638][INFO ][node                     ] [Masked Marvel] version[1.3.4], pid[9892], build[a70f3cc/2014-09-30T09:07:17Z]
+[2014-10-23 22:48:07,638][INFO ][node                     ] [Masked Marvel] initializing ...
+[2014-10-23 22:48:07,772][INFO ][plugins                  ] [Masked Marvel] loaded [], sites []
+[2014-10-23 22:48:14,375][INFO ][node                     ] [Masked Marvel] initialized
+[2014-10-23 22:48:14,375][INFO ][node                     ] [Masked Marvel] starting ...
+[2014-10-23 22:48:15,037][INFO ][transport                ] [Masked Marvel] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.0.105:9300]}
+[2014-10-23 22:48:15,879][INFO ][discovery                ] [Masked Marvel] elasticsearch/Oxm2LRvzTFi2esUQljgYrQ
+[2014-10-23 22:48:18,950][INFO ][cluster.service          ] [Masked Marvel] new_master [Masked Marvel][Oxm2LRvzTFi2esUQljgYrQ][DEV-NOTE][inet[/192.168.0.105:9300]], reason: zen-disco-join (elected_as_master)
+[2014-10-23 22:48:19,265][INFO ][http                     ] [Masked Marvel] bound_address {inet[/0:0:0:0:0:0:0:0:19821]}, publish_address {inet[/192.168.0.105:19821]}
+[2014-10-23 22:48:19,266][INFO ][node                     ] [Masked Marvel] started
+[2014-10-23 22:48:19,271][INFO ][gateway                  ] [Masked Marvel] recovered [0] indices into cluster_state
+[2014-10-23 22:57:54,722][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2014-10-23 22:57:54,803][INFO ][node                     ] [Ebon Seeker] version[1.3.4], pid[8760], build[a70f3cc/2014-09-30T09:07:17Z]
+[2014-10-23 22:57:54,804][INFO ][node                     ] [Ebon Seeker] initializing ...
+[2014-10-23 22:57:54,808][INFO ][plugins                  ] [Ebon Seeker] loaded [], sites []
+[2014-10-23 22:57:57,061][INFO ][node                     ] [Ebon Seeker] initialized
+[2014-10-23 22:57:57,061][INFO ][node                     ] [Ebon Seeker] starting ...
+[2014-10-23 22:57:57,421][INFO ][transport                ] [Ebon Seeker] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.0.105:9300]}
+[2014-10-23 22:57:58,112][INFO ][discovery                ] [Ebon Seeker] elasticsearch/K4xrywUzRd6sXhDMToyLBA
+[2014-10-23 22:58:01,147][INFO ][cluster.service          ] [Ebon Seeker] new_master [Ebon Seeker][K4xrywUzRd6sXhDMToyLBA][DEV-NOTE][inet[/192.168.0.105:9300]], reason: zen-disco-join (elected_as_master)
+[2014-10-23 22:58:01,390][INFO ][http                     ] [Ebon Seeker] bound_address {inet[/0:0:0:0:0:0:0:0:19821]}, publish_address {inet[/192.168.0.105:19821]}
+[2014-10-23 22:58:01,391][INFO ][node                     ] [Ebon Seeker] started
+[2014-10-23 22:58:01,462][INFO ][gateway                  ] [Ebon Seeker] recovered [0] indices into cluster_state

@@ -1,6 +1,6 @@
 angular.module('dmpDB').service('client', function (esFactory) {
     return esFactory({
-    host: 'localhost:9200',
+    host: 'http://localhost:19821/',
   });
 });
 
@@ -45,16 +45,16 @@ angular.module('dmpDB').controller('databaseController',
                                   type: 'mytype',
                                   id: '1',
                                   body: {
-                                    title: 'Test 1',
-                                    tags: ['y', 'z'],
-                                    published: true,
-                                    published_at: '2013-01-01',
-                                    counter: 1
+                                    Column0: 'value0',
+                                    Column1: 'value1',
+                                    Column2: 'value2',
+                                    Column3: 'value3',
+                                    Column4: 'value4'
                                   }
                                 }, function (error, response) {
                                   
                                   $scope.success = response;
-                                  $scope.danger = error;
+                                  $scope.danger = error.message;
                                   
                                 });
                         
@@ -92,7 +92,7 @@ angular.module('dmpDB').controller('databaseController',
                                             function (error, response) {
                                                 
                                                 ResetAll();
-                                                $scope.success = response;
+                                                $scope.success = response.count;
                                                 $scope.danger = error;
                                         });
                         }
