@@ -36,7 +36,13 @@ app.post(postMailboxes.spec.path, postMailboxes.action);
 
 
 
-
-app.listen(config.REST.Port);
+try
+{
+	app.listen(config.REST.Port);
+}
+catch(ex)
+{
+	console.error(ex);
+}
 
 console.log('Started REST service');
