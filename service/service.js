@@ -5,10 +5,8 @@ var postMailboxes       = require('./handlers/postMailboxesBulkHandler.js');
 
 var config          = require('./serviceConfig.js');
 
-var util            = require('util');
 var express         = require('express');
 var bodyParser      = require('body-parser')
-var elasticsearch   = require('elasticsearch');
 
 
 /// Print out configuration info
@@ -17,6 +15,7 @@ console.log('REST.URL: ' + config.REST.URL);
 
 
 var app = express();
+
 app.set('Title', 'RESTful service');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));

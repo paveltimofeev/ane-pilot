@@ -1,6 +1,11 @@
 var config     = require('../serviceConfig.js');
 var es   = require('../elasticFactory');
 
+/// Добавляет в базу данных указанное количество сгенерированных данных
+/// Параметры post-запроса
+///     nmb     - кол-во генерируемых почтовых ящиков
+///     depts   - кол-во генерируемых департаментов, опйионально, по умолчанию 5
+///     sizes   - максимальный размер почтового ящика, опйионально, по умолчанию 199
 var postMailboxes = {
     'spec' : 
     {
@@ -15,6 +20,8 @@ var postMailboxes = {
         console.log( req.params.nmb );
         
         var count = req.param('nmb');
+        var depts = req.param('depts', 5);
+        var sizes = req.param('sizes', 199);
         
         
         var bodyArr = [];
