@@ -1,3 +1,4 @@
+var config     = require('../serviceConfig.js');
 var es   = require('../elasticFactory');
 
 
@@ -18,26 +19,18 @@ var getMailboxesCount = {
             status: null
         };
         
-        try
-        {
-            es.esClient.count( { index: config.DB.Index }, function (error, response, status) 
-                {
-                    result.status = status;
-                    result.errors = error;
-                    
-                    if(!error)
-                    {
-                        result.count = response.count;
-                    }
+		es.esClient.count( { index: config.DB.Index }, function (error, response, status) 
+			{
+				result.status = status;
+				result.errors = error;
+				
+				if(error == null)
+				{
+					result.count = response.count;
+				}
 
-                    res.send(require('util').inspect(result)); 
-                });
-        }
-        catch(ex)
-        {
-            result.errors = ex;
-            res.send(result); 
-        }
+				res.send(result); 
+			});
     }
 };
 

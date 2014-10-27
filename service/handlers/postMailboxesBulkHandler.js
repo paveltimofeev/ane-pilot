@@ -15,10 +15,8 @@ var postMailboxes = {
     'action' : 
     function(req, res)
     {
-        console.log( req.param('nmb'));
-        console.log( req.query.nmb );
-        console.log( req.params.nmb );
-        
+		res.set('Content-Type', 'application/json');
+		
         var count = req.param('nmb');
         var depts = req.param('depts', 5);
         var sizes = req.param('sizes', 199);
@@ -44,9 +42,10 @@ var postMailboxes = {
             result.errors = err;
             
             if(!err){
-                result.count = bodyArr.length;
+                result.count = resp.items.length;
             }
-            
+			
+            res.send(result); 
         });
 
     }

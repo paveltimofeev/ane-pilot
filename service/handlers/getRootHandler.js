@@ -39,7 +39,7 @@ var getRoot = {
                 }
             }
   
-            links += '<br/><form action="https://ane-pilot-c9-paveltimofeev.c9.io/Mailboxes/Bulk" method="POST" ><input type="text" name="nmb" value="15"></input><input type="submit" value="Submit"></input></form>';
+            links += '<br/><form action="/Mailboxes/Bulk" method="POST" ><input type="text" name="nmb" value="15"></input><input type="submit" value="Submit"></input></form>';
  
             res.send((new Date()) + links);
         });
