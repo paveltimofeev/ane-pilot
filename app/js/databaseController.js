@@ -6,8 +6,10 @@ angular.module('dmpDB').service('client', function (esFactory) {
 
 
 angular.module('dmpDB').controller('databaseController', 
-            ['$scope', 'client', 
-            function databaseController($scope, client){
+            ['$scope', 'client', '$q', '$interval', 
+            function databaseController($scope, client, $q, $interval){
+                    
+                    var continousUpdate;
                     
                     function ResetAll() {
                         $scope.success = "";
@@ -15,7 +17,13 @@ angular.module('dmpDB').controller('databaseController',
                         $scope.warning = "";
                         $scope.danger = "";
                         
-                        $scope.data = null;
+                        $scope.data = [];
+                        
+                        $scope.updateCounter = 0;
+                        $scope.updateTimeout = 1000;
+                        $scope.updateIsPaused = false;
+                        
+                        $interval.cancel(continousUpdate);
                     }
                     
                     ResetAll();
@@ -24,7 +32,7 @@ angular.module('dmpDB').controller('databaseController',
                         
                         ResetAll();
                         $scope.info = "Test Ok at " + new Date();
-                    }
+                    };
                     
                     $scope.CreateData = function() {
                         ResetAll();
@@ -58,27 +66,34 @@ angular.module('dmpDB').controller('databaseController',
                                   
                                 });
                         
-                    }
+                    };
                     
                     $scope.GetData = function() {
                         ResetAll();
                         $scope.info = "GetData";
-                    }
+                    };
                     
                     $scope.UpdateData = function() {
                         ResetAll();
                         $scope.warning = "UpdateData";
-                    }
+                    };
                     
                     $scope.DeleteData = function() {
                         ResetAll();
                         $scope.danger = "DeleteData";
-                    }
+                    };
                     
                     $scope.ContinousUpdateView = function() {
+                        
                         ResetAll();
-                        $scope.success = "ContinousUpdateView";
-                    }
+                        
+                        $scope.success = "Waiting ...";
+                        continousUpdate = $interval(RequestData, $scope.updateTimeout, 0);
+                    };
+                    
+                    $scope.PauseUpdateView = function() {
+                        $scope.updateIsPaused = !$scope.updateIsPaused;
+                    };
                     
                     $scope.GetCount = function() {
                     
@@ -101,5 +116,32 @@ angular.module('dmpDB').controller('databaseController',
                             $scope.warning = ex;                        
                         }
                     }
+                    
+                    function RequestData() {
+                        
+                        if(!$scope.updateIsPaused)
+                        {
+                            $scope.updateCounter++; 
+                            $scope.success = 'Response № ' + $scope.updateCounter;
+                            
+                            var index = Math.floor(Math.random() * 10);
+                            
+                            var value = Math.floor(Math.random() * $scope.updateCounter);
+                            
+                            var item = { 
+                                'Column0' : 'value' + index,
+                                'Column1' : 'value' + value,
+                                'Column2' : 'value' + value,
+                                'Column3' : 'value' + value,
+                                'Column4' : 'value' + value
+                            };
+
+                            if($scope.updateCounter > 10)                            
+                                $scope.data.splice(index, 1, item);
+                            else
+                                $scope.data.push(item);
+                        }
+                    }
+
             }
 ]);

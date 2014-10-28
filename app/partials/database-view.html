@@ -8,6 +8,8 @@
   <button type="button" class="btn btn-default" ng-click="UpdateData()">Update</button>
   <button type="button" class="btn btn-default" ng-click="DeleteData()">Delete</button>
   <button type="button" class="btn btn-warning" ng-click="ContinousUpdateView()">Continously Update View</button>
+  <button type="button" class="btn btn-warning" ng-click="PauseUpdateView()" ng-Hide="updateIsPaused">Pause</button>
+  <button type="button" class="btn btn-warning" ng-click="PauseUpdateView()" ng-Show="updateIsPaused">Continue</button>
 </div>
 
 
