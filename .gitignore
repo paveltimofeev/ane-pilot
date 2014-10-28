@@ -4,3 +4,5 @@ node_modules/
 tmp
 .idea
 .DS_Store
+/elasticsearch-1.3.4/logs/
+/elasticsearch-1.3.4/data/
